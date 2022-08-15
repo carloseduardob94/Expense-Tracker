@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react'
 import { Container, Header, HeaderText, Body } from './App.styles';
 import { Item } from './types/Item'
 import { items } from './data/items'
-import { Category } from './types/Category'
 import { categories } from './data/categories'
 import { TableArea } from './components/TableArea'
 import { InfoArea } from './components/InfoArea'

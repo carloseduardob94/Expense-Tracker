@@ -24,7 +24,6 @@ export const TableItem = ({ item }: Props) => {
         <Value color={categories[item.category].expense ? 'red' : 'green'}>
           R$ {item.value}
         </Value>
-        
       </TableColumn>
 
     </TableLine>
