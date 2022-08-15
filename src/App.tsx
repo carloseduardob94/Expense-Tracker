@@ -20,6 +20,10 @@ const App = () => {
     setFilteredList(filterListByMonth(list, currentMonth))
   }, [list, currentMonth])
 
+  const handleMonthChange = (newMonth: string) => {
+    setCurrentMonth(newMonth)
+  }
+
   return (
     <Container>
       <Header>
@@ -28,7 +32,10 @@ const App = () => {
       
       <Body>
 
-        <InfoArea currentMonth={currentMonth}/>
+        <InfoArea 
+          currentMonth={currentMonth}
+          onMonthChange={handleMonthChange} 
+        />
 
         {/*Área de inserir informações*/}
 
